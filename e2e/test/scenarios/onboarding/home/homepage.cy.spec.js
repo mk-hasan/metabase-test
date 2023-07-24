@@ -39,7 +39,7 @@ describe("scenarios > home > homepage", () => {
       cy.visit("/");
       cy.wait("@getXrayCandidates");
       // eslint-disable-next-line no-unscoped-text-selectors -- deprecated usage
-      cy.findByText("Try out these sample x-rays to see what Metabase can do.");
+      cy.findByText("Try out these sample x-rays to see what Springboard can do.");
       // eslint-disable-next-line no-unscoped-text-selectors -- deprecated usage
       cy.findByText("Orders").click();
 

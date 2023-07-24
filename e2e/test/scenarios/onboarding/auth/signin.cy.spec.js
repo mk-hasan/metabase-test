@@ -94,7 +94,7 @@ describe("scenarios > auth > signin", () => {
     cy.reload();
 
     // eslint-disable-next-line no-unscoped-text-selectors -- deprecated usage
-    cy.contains("Sign in to Metabase");
+    cy.contains("Sign in to Springboard");
     cy.findByLabelText("Email address").type(admin.email);
     cy.findByLabelText("Password").type(admin.password);
     // eslint-disable-next-line no-unscoped-text-selectors -- deprecated usage

@@ -6,9 +6,9 @@ import { CardIcon, CardRoot, CardTitle } from "./HomeHelpCard.styled";
 export const HomeHelpCard = (): JSX.Element => {
   const cardTitleId = useUniqueId();
   return (
-    <CardRoot href={MetabaseSettings.learnUrl()} aria-labelledby={cardTitleId}>
+    <CardRoot href={"https://conf.oetkerdigital.com/#all-updates"} aria-labelledby={cardTitleId}>
       <CardIcon name="reference" />
-      <CardTitle id={cardTitleId}>{t`Metabase tips`}</CardTitle>
+      <CardTitle id={cardTitleId}>{t`Springboard tips`}</CardTitle>
     </CardRoot>
   );
 };

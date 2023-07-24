@@ -22,13 +22,13 @@ export const CompletedStep = (): JSX.Element | null => {
 
   return (
     <StepRoot>
-      <StepTitle>{t`You're all set up!`}</StepTitle>
+      <StepTitle>{t`You're all set up to use Springboard by Oetker Digital!`}</StepTitle>
       <StepBody>
         <NewsletterForm />
       </StepBody>
       <StepFooter>
         <a className="Button Button--primary" href={baseUrl}>
-          {t`Take me to Metabase`}
+          {t`Take me to Springboard`}
         </a>
       </StepFooter>
     </StepRoot>

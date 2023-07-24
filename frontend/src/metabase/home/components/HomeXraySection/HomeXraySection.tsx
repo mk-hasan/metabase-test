@@ -65,7 +65,7 @@ const HomeXrayView = ({ database, candidates = [] }: HomeXrayViewProps) => {
     <div>
       {isSample ? (
         <HomeCaption primary>
-          {t`Try out these sample x-rays to see what Metabase can do.`}
+          {t`Try out these sample x-rays to see what Springboard can do.`}
         </HomeCaption>
       ) : canSelectSchema ? (
         <HomeCaption primary>

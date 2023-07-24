@@ -32,7 +32,7 @@ describe("scenarios > x-rays", () => {
 
     // eslint-disable-next-line no-unscoped-text-selectors -- deprecated usage
     cy.findByText(
-      "Try out these sample x-rays to see what Metabase can do.",
+      "Try out these sample x-rays to see what Springboard can do.",
     ).should("not.exist");
     // eslint-disable-next-line no-unscoped-text-selectors -- deprecated usage
     cy.findByText(/^A summary of/).should("not.exist");

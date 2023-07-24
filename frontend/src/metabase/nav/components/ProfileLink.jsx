@@ -65,14 +65,14 @@ function ProfileLink({ user, adminItems, onLogout }) {
         icon: null,
         link:
           isAdmin && isPaidPlan
-            ? `https://www.metabase.com/help-premium?utm_source=in-product&utm_medium=menu&utm_campaign=help&instance_version=${tag}&diag=${compactBugReportDetailsForUrl}`
-            : `https://www.metabase.com/help?utm_source=in-product&utm_medium=menu&utm_campaign=help&instance_version=${tag}`,
+            ? `https://docs.google.com/presentation/d/1IwxzC_AiGnl1rt4gFBFKao1Un-MfFcgq-jSMiI6_pV4/edit`
+            : `https://docs.google.com/presentation/d/1IwxzC_AiGnl1rt4gFBFKao1Un-MfFcgq-jSMiI6_pV4/edit`,
 
         externalLink: true,
         event: `Navbar;Profile Dropdown;About ${tag}`,
       },
       {
-        title: t`About Metabase`,
+        title: t`About Springboard`,
         icon: null,
         action: () => openModal("about"),
         event: `Navbar;Profile Dropdown;About ${tag}`,
@@ -94,7 +94,7 @@ function ProfileLink({ user, adminItems, onLogout }) {
   }, [user.is_superuser, isPaidPlan]);
 
   // don't show trademark if application name is whitelabeled
-  const showTrademark = t`Metabase` === "Metabase";
+  const showTrademark = t`Springboard` === "Springboard";
   return (
     <div>
       <EntityMenu
@@ -118,7 +118,7 @@ function ProfileLink({ user, adminItems, onLogout }) {
             <h2
               style={{ fontSize: "1.75em" }}
               className="text-dark"
-            >{t`Thanks for using Metabase!`}</h2>
+            >{t`Thanks for using Springboard!`}</h2>
             <div className="pt2">
               <h3 className="text-dark mb1">
                 {t`You're on version`} {tag}
@@ -143,8 +143,8 @@ function ProfileLink({ user, adminItems, onLogout }) {
               className="p2 h5 text-centered text-medium border-top"
             >
               <span className="block">
-                <span className="text-bold">Metabase</span>{" "}
-                {t`is a Trademark of`} Metabase, Inc
+                <span className="text-bold">Springboard</span>{" "}
+                {t`is a Trademark of`} Oetker Digital GmbH
               </span>
               <span>{t`and is built with care by a team from all across this pale blue dot.`}</span>
             </div>

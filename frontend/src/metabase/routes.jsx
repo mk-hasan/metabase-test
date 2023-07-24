@@ -71,7 +71,7 @@ import {
 } from "./route-guards";
 
 export const getRoutes = store => (
-  <Route title={t`Metabase`} component={App}>
+  <Route title={t`Springboard by Oetker Digital`} component={App}>
     {/* SETUP */}
     <Route
       path="/setup"
